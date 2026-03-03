@@ -34,7 +34,7 @@ export const Check = () => {
             Img:item.Img
         }))
         const data = { fname, lname, phn, email, country, state, city, postal, address, id, payment, orderno, totalprice, data: items }
-        const result = await fetch("https://elcto-1.onrender.com/api/checkout", {
+        const result = await fetch("https://project-2-yvj3.onrender.com/api/checkout", {
             method: "post",
             body: JSON.stringify(data),
             headers: { "Content-type": "application/json;charset=UTF-8" }
@@ -55,7 +55,7 @@ export const Check = () => {
     }
 
     const show = async () => {
-        const result = await fetch(`https://elcto-1.onrender.com/getcartdata/${id}`, {
+        const result = await fetch(`https://project-2-yvj3.onrender.com/getcartdata/${id}`, {
             method: "get"
         })
         if (result.ok) {
@@ -69,7 +69,7 @@ export const Check = () => {
         }
     }
     const deletecart = async () => {
-        const result = await fetch(`https://elcto-1.onrender.com/api/removecartdata/${id}`, {
+        const result = await fetch(`https://project-2-yvj3.onrender.com/api/removecartdata/${id}`, {
             method: "delete"
         })
         if (result.ok) {

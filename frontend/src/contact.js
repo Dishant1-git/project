@@ -11,7 +11,7 @@ export const Contact = () => {
 
     const send = async () => {
         const data = { name, mail, phn, type, msg }
-        const result = await fetch("https://elcto-1.onrender.com/api/response", {
+        const result = await fetch("https://project-2-yvj3.onrender.com/api/response", {
             method: "post",
             body: JSON.stringify(data),
             headers: { "Content-type": "application/json;charset=UTF-8" }

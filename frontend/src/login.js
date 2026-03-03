@@ -14,7 +14,7 @@ export const Login = () => {
     const login = async (e) => {
         e.preventDefault()
         const data = { email, pass }
-        const result = await fetch("https://elcto-1.onrender.com/api/login", {
+        const result = await fetch("https://project-2-yvj3.onrender.com/api/login", {
             method: "post",
             body: JSON.stringify(data),
             headers: { "Content-type": "application/json;charset=UTF-8" }

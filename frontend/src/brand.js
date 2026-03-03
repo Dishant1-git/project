@@ -14,7 +14,7 @@ export const Brand = () => {
   }, [])
 
   const show = async () => {
-    const result = await fetch(`https://elcto-1.onrender.com/api/brand/${prr}`, {
+    const result = await fetch(`https://project-2-yvj3.onrender.com/api/brand/${prr}`, {
       method: "get"
     })
     if (result.ok) {
